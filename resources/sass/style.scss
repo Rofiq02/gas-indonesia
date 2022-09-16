@@ -1,0 +1,132 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+//=========== GENERAL ===========
+.navbar-logo{
+  width: 50px;
+  height: auto;
+}
+
+.text-logo{
+  color: #00357A;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-bg{
+  background: $color-base;
+}
+
+.navbar__custom .nav-item{
+  font-size: $font-size-16;
+
+    a.nav-link{
+        color: $color-primary;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: 600;
+
+        &:hover{
+          color: $color-secondary;
+        }
+    }
+}
+
+.btn-outline-white{
+  border: 1px solid #ffff;
+  color: $color-primary;
+  font-weight: 600;
+
+  &:hover{
+    background: #fff !important;
+    border: 0 !important;
+    color: $color-base !important;
+  }
+}
+
+.btn-circle{
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  background: $color-orange;
+  color: $color-primary;
+  font-size: 12px;
+  line-height: .8rem;
+
+  &:hover{
+    background: $color-orange !important;
+    color: $color-primary;
+  }
+}
+
+
+//============ HOME ===========
+
+.home{
+  background: $color-base;
+}
+
+.home__title{
+  margin-top: 5rem;
+  color: #fff;
+  font-size: $font-size-62;
+  font-weight: 800;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.home__subtitle{
+  color: $color-primary;
+  font-size: $font-size-16;
+  font-weight: 600;
+}
+
+.home__playstore{
+  margin-top: 2rem;
+
+  img{
+    width: 160px;
+    height: auto;
+  }
+}
+
+.home__illustration{
+  width: 520px;
+  height: auto;
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.text-download{
+  color: #00357A;
+  font-size: $font-size-16;
+  font-weight: 800;
+}
+
+.home__social-media{
+    margin-top: 5rem;
+
+    .btn-circle{
+      background: $color-secondary;
+      display: inline-block;
+      border-radius: 60px;
+      padding: 0.9em 1em;
+      color: #fff;
+    }
+}
+
+
+
+//============= MOBILE ===========
+@media(max-width: 576px) {
+
+  .home__title{
+    margin-top: 2rem;
+  }
+  .home__illustration{
+    display: none;
+  }
+}
